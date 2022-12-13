@@ -1,27 +1,33 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    color: #3d3b3b;
 }
-
-
-
-nav{
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav {
     display: flex;
     justify-content: space-around;
     height: 5vw;
     align-items: center;
-    
+
 }
 
-nav .logo img{
+nav .logo img {
     width: 13vw;
     height: 4vw;
 }
-.list{
+
+.list {
     width: 30%;
 }
-ul{
+
+ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -29,61 +35,71 @@ ul{
 }
 
 ul li {
-    list-style-type:none;
+    list-style-type: none;
 }
-.button{
+
+.button {
     background-color: black;
     color: white;
     padding: 15px;
     border-radius: 5px;
 }
-header{
+
+header {
     margin-top: 2vw;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 40vw;
+
     position: relative;
 }
-.header-left{
-  width: 70%;
-  background: rgb(233,230,213);
-  background: radial-gradient(circle, rgba(233,230,213,1) 0%, rgba(255,253,240,1) 49%, rgba(255,255,255,1) 100%);
-  padding: 10vw 5vw;
-  
+
+.header-left {
+    width: 70%;
+    background: rgb(233, 230, 213);
+    background: radial-gradient(circle, rgba(233, 230, 213, 1) 0%, rgba(255, 253, 240, 1) 49%, rgba(255, 255, 255, 1) 100%);
+    padding: 10vw 5vw;
+
 }
-.header-right{
+
+.header-right {
     width: 30%;
     background-color: black;
 }
-header .statics{
+
+header .statics {
     position: absolute;
     top: 12%;
     right: 15%;
 
 }
-header img{
-    width:30vw;
+
+header img {
+    width: 30vw;
     height: 30vw;
     border-radius: 50%;
 }
-.statics .values{
+
+.statics .values {
     position: relative;
 }
-.values p{
+
+.values p {
     position: absolute;
     padding: 1vw 2vw;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
 }
-.values p span{
+
+.values p span {
     font-weight: 400;
     font-size: 15px;
 }
-.clients{
+
+.clients {
     background-color: black;
     color: white;
     top: -1vw;
@@ -91,15 +107,17 @@ header img{
     font-weight: 1000;
     font-size: 5vw;
 }
-.percentage{
+
+.percentage {
     background-color: white;
     color: black;
     bottom: 20%;
-    right:-50px;
+    right: -50px;
     font-weight: 1000;
     font-size: 5vw;
 }
-.metaph{
+
+.metaph {
     background-color: white;
     color: black;
     font-weight: 1000;
@@ -108,30 +126,34 @@ header img{
     left: 0;
 }
 
-h1{
+h1,
+h2 {
     font-size: 6vw;
     font-weight: bolder;
-    letter-spacing: -.2vw;
     font-family: Arial, Helvetica, sans-serif;
 }
-.header-left .sous-titre{
+
+.header-left .sous-titre {
     width: 45vw;
-    padding: 1vw 0 ;
+    padding: 1vw 0;
 }
-.header-left .links{
+
+.header-left .links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 20vw;
     margin-top: 3vw;
 }
-.links>p:first-child{
+
+.links>p:first-child {
     background-color: #ffb3a6;
     padding: 1vw;
     border-radius: 5px;
     font-weight: bold;
 }
-.links>p:last-child{
+
+.links>p:last-child {
     padding: 1vw;
     font-weight: bold;
     display: flex;
@@ -139,33 +161,98 @@ h1{
     justify-content: space-between;
     width: 9vw;
 }
+
 /*header responsive*/
-@media only screen and (max-width: 480px){
-    header{
+@media only screen and (max-width: 480px) {
+    header {
         display: block;
     }
-    .header-left{
-      width: 100%;
-      
+
+    .header-left {
+        width: 100%;
+
     }
-    .header-right{
+
+    .header-right {
         width: 100%;
         height: 20vw;
         background-color: black;
     }
-    header .statics{
+
+    header .statics {
         top: 100%;
         right: 20%;
-    
+
     }
-    .header-left .sous-titre{
+
+    .header-left .sous-titre {
         width: 100%;
     }
-    nav{
+
+    nav {
         justify-content: space-between;
         padding: 15px;
     }
-    ul{
+
+    ul {
         display: none;
     }
-    }
+}
+
+/*****process*****/
+
+.proccess_follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+.proccess_follow h2 {
+    font-size: 4vw;
+    font-weight: bolder;
+    color: #2e2d2d;
+    padding: 1vw;
+}
+.proccess_follow p{
+    font-size: 1.7vw;
+    padding: 1vw;
+    text-align: center;
+}
+.process{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 1600px;
+    padding: 3vw;
+    text-align: center;
+}
+.service{
+    padding: 3vw;
+    width: 370px;
+}
+.icons{
+    border-radius: 50%;
+    width: 7vw;
+    height: 7vw;
+}
+.idea{
+    background-color:  #b4e0c5;
+}
+.planning{
+    background-color:  #ffeeb6;
+}
+.Develop{
+    background-color:  #ffcbc3;
+}
+.structure{
+    background-color:  #e7e7e7;
+}
+.service>p{
+    font-size: 1vw;
+}
+.service>h4{
+    margin-top: 15px;
+    font-size: 1.5vw;
+}
